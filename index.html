@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peliculas Joel</title>
+  <!--
+    Css archivo
+  -->
+  <!-- Tipografias-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+
+    <!-- 
+      HEADER
+    -->
+  
+    <header class="header" data-header>
+      <div class="container">
+  
+        <div class="overlay" data-overlay></div>
+        <a href="./index.html" class="logo">
+          <img src="./assets/images/LogoBA.svg" alt=" LogoBA logo">
+        </a>
+
+        <div class="header-actions">
+
+            <button class="btn btn-primary" id="form-open">iniciar sesión</button>
+
+      </div>
+
+      <button class="menu-open-btn" data-menu-open-btn>
+        <ion-icon name="reorder-two"></ion-icon>
+      </button>
+      
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/LogoBA.svg" alt="LogoBA logo">
+          </a>
+
+          <button class="menu-close-btn" data-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="./index.html" class="navbar-link">Inicio</a>
+          </li>
+
+          <li>
+            <a href="#peliculas-calificadas" class="navbar-link">Peliculas</a>
+          </li>
+
+          <li>
+            <a href="#tv-series" class="navbar-link">Tv</a>
+          </li>
+          <li>
+            <a href="#service" class="navbar-link">Precios</a>
+          </li>
+
+        </ul>
+
+      </nav>
+    </div>
+    </header>
+    <!-- Login--> <!-- Formularios de inicio de sesión y registro -->
+
+  <div id="form-container" class="form-container">
+    <div class="form-content">
+      <span class="close-btn" id="form-close">&times;</span>
+      <div class="form-toggle">
+        <button id="login-toggle" class="form-toggle-btn active">Iniciar sesión</button>
+        <button id="register-toggle" class="form-toggle-btn">Registrarse</button>
+      </div>
+      <form id="login-form" class="form">
+        <h2>Iniciar sesión</h2>
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" required>
+        <label for="login-password">Contraseña:</label>
+        <input type="password" id="login-password" required>
+        <label>
+          <input type="checkbox" id="remember-me"> Recordarme
+        </label>
+        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+      </form>
+      <form id="register-form" class="form hidden">
+        <h2>Registrarse</h2>
+        <label for="register-first-name">Nombre:</label>
+        <input type="text" id="register-first-name" required>
+        <label for="register-last-name">Apellido:</label>
+        <input type="text" id="register-last-name" required>
+        <label for="register-gender">Género:</label>
+        <select id="register-gender" required>
+          <option value="">Selecciona</option>
+          <option value="male">Masculino</option>
+          <option value="female">Femenino</option>
+          <option value="other">Otro</option>
+        </select>
+        <label for="register-birthdate">Fecha de Nacimiento:</label>
+        <input type="date" id="register-birthdate" required>
+        <label for="register-email">Email:</label>
+        <input type="email" id="register-email" required>
+        <label for="register-password">Contraseña:</label>
+        <input type="password" id="register-password" required>
+        <label for="register-confirm-password">Repetir Contraseña:</label>
+        <input type="password" id="register-confirm-password" required>
+        <label>
+          <input type="checkbox" id="terms-and-conditions" required> Acepto los términos y condiciones
+        </label>
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+      </form>
+    </div>
+  </div>
+    <main>
+        <article>
+    
+          <!-- 
+            - #HERO
+          -->
+    
+          <section class="hero">
+            <div class="container">
+    
+              <div class="hero-content">
+    
+                <p class="hero-subtitle">Codo A codo</p>
+    
+                <h1 class="h1 hero-title">
+                  Sin limite <strong>Peliculas</strong>, TVs , y mas.
+                </h1>
+    
+                <div class="meta-wrapper">
+    
+                  <div class="badge-wrapper">
+                    <div class="badge badge-fill">PG 18</div>
+    
+                    <div class="badge badge-outline">HD</div>
+                  </div>
+    
+                  <div class="ganre-wrapper">
+                    <a href="#">Romanticos,</a>
+    
+                    <a href="#">Drama</a>
+                  </div>
+    
+                  <div class="date-time">
+    
+                    <div>
+                      <ion-icon name="calendar-outline"></ion-icon>
+    
+                      <time datetime="2022">2022</time>
+                    </div>
+    
+                    <div>
+                      <ion-icon name="time-outline"></ion-icon>
+    
+                      <time datetime="PT128M">128 min</time>
+                    </div>
+    
+                  </div>
+    
+                </div>
+                <button class="btn btn-primary">
+                    <ion-icon name="play"></ion-icon>
+      
+                    <span>Ver Ahora</span>
+                  </button>
+      
+                </div>
+      
+              </div>
+            </section>
+            <!--- 
+            Segunda seccion-->
+
+            <section class="upcoming" id="segundaSection">
+                <div class="container">
+        
+                  <div class="flex-wrapper">
+        
+                    <div class="title-wrapper">
+                      <p class="section-subtitle">Transmicion en Linea</p>
+        
+                      <h2 class="h2 section-title">Proximas Peliculas </h2>
+                    </div>
+        
+                    <ul class="filter-list">
+        
+                      <li>
+                        <button class="filter-btn">Peliculas</button>
+                      </li>
+        
+                      <li>
+                        <button class="filter-btn">TVs</button>
+                      </li>
+        
+                      <li>
+                        <button class="filter-btn">Anime</button>
+                      </li>
+        
+                    </ul>
+        
+                  </div>
+        
+                  <ul class="movies-list  has-scrollbar">
+        
+                    <li>
+                      <div class="movie-card">
+        
+                        <a href="./movie-details.html">
+                          <figure class="card-banner">
+                            <img src="./assets/images/upcoming-1.png" alt="El hombre del norte poster">
+                          </figure>
+                        </a>
+        
+                        <div class="title-wrapper">
+                          <a href="./movie-details.html">
+                            <h3 class="card-title">El hombre del norte</h3>
+                          </a>
+        
+                          <time datetime="2022">2022</time>
+                        </div>
+        
+                        <div class="card-meta">
+                          <div class="badge badge-outline">HD</div>
+        
+                          <div class="duration">
+                            <ion-icon name="time-outline"></ion-icon>
+        
+                            <time datetime="PT137M">2:30 Hs</time>
+                          </div>
+        
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+        
+                            <p>8.5</p>
+                          </div>
+                        </div>
+        
+                      </div>
+                    </li>
+        
+                    <li>
+                      <div class="movie-card">
+        
+                        <a href="./movie-details.html">
+                          <figure class="card-banner">
+                            <img src="./assets/images/upcoming-2.png"
+                              alt="Doctor Strange en el Multiverso de la Locura poster">
+                          </figure>
+                        </a>
+        
+                        <div class="title-wrapper">
+                          <a href="./movie-details.html">
+                            <h3 class="card-title">Doctor Strange en el Multiverso de la Locura
+                                </h3>
+                          </a>
+        
+                          <time datetime="2022">2022</time>
+                        </div>
+        
+                        <div class="card-meta">
+                          <div class="badge badge-outline">4K</div>
+        
+                          <div class="duration">
+                            <ion-icon name="time-outline"></ion-icon>
+        
+                            <time datetime="PT126M">2:10 Hs</time>  
+                          </div>
+        
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+        
+                            <p>8.4</p>
+                          </div>
+                        </div>
+        
+                      </div>
+                    </li>
+        
+                    <li>
+                      <div class="movie-card">
+        
+                        <a href="./movie-details.html">
+                          <figure class="card-banner">
+                            <img src="./assets/images/upcoming-3.png" alt="Memorias poster">
+                          </figure>
+                        </a>
+        
+                        <div class="title-wrapper">
+                          <a href="./movie-details.html">
+                            <h3 class="card-title">Memorias</h3>
+                          </a>
+        
+                          <time datetime="2022">2022</time>
+                        </div>
+        
+                        <div class="card-meta">
+                          <div class="badge badge-outline">2K</div>
+        
+                          <div class="duration">
+                            <ion-icon name="time-outline">2:10 hs</ion-icon>
+        
+                            <time datetime="PT115M">2:10 hs</time>
+                          </div>
+        
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+        
+                            <p>5.4</p>
+                          </div>
+                        </div>
+        
+                      </div>
+                    </li>
+        
+                    <li>
+                      <div class="movie-card">
+        
+                        <a href="./movie-details.html">
+                          <figure class="card-banner">
+                            <img src="./assets/images/upcoming-4.png"
+                              alt="TEl insoportable peso de un talento descomunal poster">
+                          </figure>
+                        </a>
+        
+                        <div class="title-wrapper">
+                          <a href="./movie-details.html">
+                            <h3 class="card-title">El insoportable peso de un talento descomunal</h3>
+                          </a>
+        
+                          <time datetime="2022">2022</time>
+                        </div>
+        
+                        <div class="card-meta">
+                          <div class="badge badge-outline">HD</div>
+        
+                          <div class="duration">
+                            <ion-icon name="time-outline"></ion-icon>
+        
+                            <time datetime="PT107M">1:47 HS</time>
+                          </div>
+        
+                          <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+        
+                            <p>7.4</p>
+                          </div>
+                        </div>
+        
+                      </div>
+                    </li>
+        
+                  </ul>
+        
+                </div>
+              </section>
+
+              <!--- SERVICIOS -->
+
+              <section class="service" id="service">
+                <div class="container">
+        
+                  <div class="service-banner">
+                    <figure>
+                      <img src="./assets/images/service-banner.jpg" alt="HD 4k rezolucion!  15.00$">
+                    </figure>
+        
+                    <a href="./assets/images/service-banner.jpg" download class="service-btn">
+                      <span>Descargas</span>
+        
+                      <ion-icon name="download-outline"></ion-icon>
+                    </a>
+                  </div>
+        
+                  <div class="service-content">
+        
+                    <h2 class="service-subtitle">Servicios</h2>
+        
+                    <h2 class="h2 service-title">Descarga tus programas y míralos sin conexión.</h2>
+        
+                    <p class="service-text">
+                      Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod tempor.There are many variations of
+                      passages of lorem
+                      Ipsum available, but the majority have suffered alteration in some injected humour.
+                    </p>
+        
+                    <ul class="service-list">
+        
+                      <li>
+                        <div class="service-card">
+        
+                          <div class="card-icon">
+                            <ion-icon name="tv"></ion-icon>
+                          </div>
+        
+                          <div class="card-content">
+                            <h3 class="h3 card-title">Disfruta en tu televisor.</h3>
+        
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet, consecetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                          </div>
+        
+                        </div>
+                      </li>
+        
+                      <li>
+                        <div class="service-card">
+        
+                          <div class="card-icon">
+                            <ion-icon name="videocam"></ion-icon>
+                          </div>
+        
+                          <div class="card-content">
+                            <h3 class="h3 card-title">Mira en todas partes</h3>
+        
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet, consecetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                          </div>
+        
+                        </div>
+                      </li>
+        
+                    </ul>
+        
+                  </div>
+        
+                </div>
+              </section>
+        <!-- Mejores calificadas -->
+        <section class="top-rated" id="peliculas-calificadas">
+        <div class="container">
+
+          <p class="section-subtitle">Streaming</p>
+
+          <h2 class="h2 section-title">Peliculas Mejores Rankeadas</h2>
+
+          <ul class="filter-list">
+
+            <li>
+              <button class="filter-btn">Peliculas</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">TV</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Documentales</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Deportes</button>
+            </li>
+
+          </ul>
+
+          <ul class="movies-list">
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-1.png" alt="Sonic the Hedgehog 2 poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Sonic the Hedgehog 2</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT122M">122 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <p>7.8</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-2.png" alt="Morbius poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Morbius</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">HD</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT104M">104 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <p>2.5</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-3.png" alt="El proyecto Adam poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">El proyecto Adam </h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT106M">106 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <p>7.0</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-4.png" alt="Free Guy: tomando el control poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Free Guy: tomando el control</h3>
+                  </a>
+
+                  <time datetime="2021">2021</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT115M">115 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <p>6.2</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-5.png" alt="Batman movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Batman</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT176M">176 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <p>7.9</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-6.png" alt="Uncharted poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Uncharted</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">HD</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT116M">116 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <p>7.0</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-7.png" alt="Muerte en el Nilo poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Muerte en el Nilo</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT127M">127 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <p>6.5</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/movie-8.png" alt="The King's Man: La Primera Misión poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">The King's Man: La Primera Misión</h3>
+                  </a>
+
+                  <time datetime="2021">2021</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">HD</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT131M">131 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <p>7.0</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+       <!-- 
+        Tv Programas
+      -->
+
+      <section class="tv-series" id="tv-series">
+        <div class="container">
+
+          <p class="section-subtitle">Mejores Series de Tv</p>
+
+          <h2 class="h2 section-title">Mejores Series de Tv En Argentina</h2>
+
+          <ul class="movies-list">
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/CasadosconHijos.jpg" alt="Casados con Hijos poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Casados Con Hijos</h3>
+                  </a>
+
+                  <time datetime="2005">2005</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline">2 Temp</ion-icon>
+
+                    <time datetime="PT47M">1 Hs por Capitulo</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <p>8.6</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/breaking-bad.jpg" alt="Breaking Bad poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Breaking Bad</h3>
+                  </a>
+
+                  <time datetime="2008">2008</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4k</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline">5 Temp</ion-icon>
+
+                    <time datetime="PT59M">1 Hs Por Capitulo</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <p>8.8</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/Game-of-thrones.jpg" alt="Game of Thrones poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Game of Thrones</h3>
+                  </a>
+
+                  <time datetime="2011">2011</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline">8 Temp</ion-icon>
+
+                    <time datetime="PT51M">51 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <p>8.3</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/Sex-education.jpg" alt="Sex Education poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Sex Education</h3>
+                  </a>
+
+                  <time datetime="2019">2019</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline">2 Temp</ion-icon>
+
+                    <time datetime="PT70M">40-60 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <p>8.3</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+      
+     <!-- 
+        - #CTA
+      -->
+
+      <section class="cta">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="cta-title">La prueba comienza los primeros 30 días.</h2>
+
+            <p class="cta-text">
+              Ingresa tu correo electrónico para crear o reiniciar tu membresía.
+            </p>
+          </div>
+
+          <form action="#" class="cta-form">
+            <input type="email" name="email" required placeholder="Ingresa tu email email" class="email-field">
+
+            <button type="submit" class="cta-form-btn">Comienza Ahora</button>
+          </form>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+<!-- 
+    #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand-wrapper">
+
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/LogoBA.svg" alt="Filmlane logo">
+          </a>
+
+          <ul class="footer-list">
+
+            <li>
+              <a href="./index.html" class="footer-link">Inicio</a>
+            </li>
+
+            <li>
+              <a href="#peliculas-calificadas" class="footer-link">Peliculas</a>
+            </li>
+
+            <li>
+              <a href="#tv-series" class="footer-link">TV</a>
+            </li>
+            <li>
+              <a href="#service" class="footer-link">Precios</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="quicklink-wrapper">
+
+          <ul class="quicklink-list">
+
+            <li>
+              <a href="#" class="quicklink-link">Faq</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Centro de Ayuda</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Terminos y condiciones</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Privacidad</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="#">Codo A codo</a>. Proyecto en proceso</p>
+
+        <img src="./assets/images/footer-bottom-img.png" alt="LOGO de la compañia" class="footer-bottom-img">
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #sUBIR AL SECCION INICIAL
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - Customizacion del js
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+    </body>
+           
+            

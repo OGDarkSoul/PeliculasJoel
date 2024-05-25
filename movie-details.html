@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casados Con Hijos</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./LogoBA.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="#top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/LogoBA.svg" alt=" LogoBA logo">
+      </a>
+
+      <div class="header-actions">
+
+        <button class="btn btn-primary" id="form-open">iniciar sesión</button>
+
+    </div>
+
+    <button class="menu-open-btn" data-menu-open-btn>
+      <ion-icon name="reorder-two"></ion-icon>
+    </button>
+    
+    <nav class="navbar" data-navbar>
+
+      <div class="navbar-top">
+
+        <a href="./index.html" class="logo">
+          <img src="./assets/images/LogoBA.svg" alt="LogoBA logo">
+        </a>
+
+        <button class="menu-close-btn" data-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="./index.html" class="navbar-link">Inicio</a>
+        </li>
+        <li>
+          <a href="/index.html#peliculas-calificadas" class="navbar-link">Peliculas</a>
+        </li>
+        <li>
+          <a href="index.html#tv-series" class="navbar-link">Tv</a>
+        </li>
+        <li>
+          <a href="index.html#service" class="navbar-link">Precios</a>
+        </li>
+
+      </ul>
+
+    </nav>
+  </div>
+  </header>
+
+
+ <!-- Login--> <!-- Formularios de inicio de sesión y registro -->
+ <div id="form-container" class="form-container">
+  <div class="form-content">
+    <span class="close-btn" id="form-close">&times;</span>
+    <div class="form-toggle">
+      <button id="login-toggle" class="form-toggle-btn active">Iniciar sesión</button>
+      <button id="register-toggle" class="form-toggle-btn">Registrarse</button>
+    </div>
+    <form id="login-form" class="form">
+      <h2>Iniciar sesión</h2>
+      <label for="login-email">Email:</label>
+      <input type="email" id="login-email" required>
+      <label for="login-password">Contraseña:</label>
+      <input type="password" id="login-password" required>
+      <label>
+        <input type="checkbox" id="remember-me"> Recordarme
+      </label>
+      <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+    </form>
+    <form id="register-form" class="form hidden">
+      <h2>Registrarse</h2>
+      <label for="register-first-name">Nombre:</label>
+      <input type="text" id="register-first-name" required>
+      <label for="register-last-name">Apellido:</label>
+      <input type="text" id="register-last-name" required>
+      <label for="register-gender">Género:</label>
+      <select id="register-gender" required>
+        <option value="">Selecciona</option>
+        <option value="male">Masculino</option>
+        <option value="female">Femenino</option>
+        <option value="other">Otro</option>
+      </select>
+      <label for="register-birthdate">Fecha de Nacimiento:</label>
+      <input type="date" id="register-birthdate" required>
+      <label for="register-email">Email:</label>
+      <input type="email" id="register-email" required>
+      <label for="register-password">Contraseña:</label>
+      <input type="password" id="register-password" required>
+      <label for="register-confirm-password">Repetir Contraseña:</label>
+      <input type="password" id="register-confirm-password" required>
+      <label>
+        <input type="checkbox" id="terms-and-conditions" required> Acepto los términos y condiciones
+      </label>
+      <button type="submit" class="btn btn-primary">Registrarse</button>
+    </form>
+  </div>
+</div>
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #detalles
+      -->
+
+      <section class="movie-detail">
+        <div class="container">
+
+          <figure class="movie-detail-banner">
+
+            <img src="./assets/images/CasadosconHijos.jpg" alt="Casados con Hijos poster">
+
+            <button class="play-btn">
+              <ion-icon name="play-circle-outline"></ion-icon>
+            </button>
+
+          </figure>
+
+          <div class="movie-detail-content">
+
+            <p class="detail-subtitle">Nuevos episodios</p>
+
+            <h1 class="h1 detail-title">
+              Casados <strong>con</strong> Hijos
+            </h1>
+
+            <div class="meta-wrapper">
+
+              <div class="badge-wrapper">
+                <div class="badge badge-fill">PG 13</div>
+
+                <div class="badge badge-outline">HD</div>
+              </div>
+
+              <div class="ganre-wrapper">
+                <a href="#">Comedia,</a>
+                <a href="#">Vida Cotidiana</a>
+              </div>
+
+              <div class="date-time">
+
+                <div>
+                  <ion-icon name="calendar-outline"></ion-icon>
+
+                  <time datetime="2005">2005</time>
+                </div>
+
+                <div>
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT115M">40-60 x Capitulo</time>
+                </div>
+
+              </div>
+
+            </div>
+
+            <p class="storyline">
+              Los Argento son una familia disfuncional de clase media que lucha por sobrevivir en un barrio de Buenos Aires, con el bajo salario del jefe de familia, las extravagancias de la madre y las torpezas de los dos hijos.
+            </p>
+
+            <div class="details-actions">
+
+              <button class="share">
+                <ion-icon name="share-social"></ion-icon>
+
+                <span>Compartir</span>
+              </button>
+
+              <div class="title-wrapper">
+                <p class="title">Youtube video</p>
+
+                <p class="text">Canales de Streaming</p>
+              </div>
+
+              <button class="btn btn-primary">
+                <ion-icon name="play"></ion-icon>
+
+                <span>Watch Now</span>
+              </button>
+
+            </div>
+
+            <a href="./assets/images/CasadosconHijos.jpg" download class="download-btn">
+              <span>Descargar</span>
+
+              <ion-icon name="download-outline"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TV SERIES
+      -->
+
+      <section class="tv-series">
+        <div class="container">
+
+          <p class="section-subtitle">Mejores Series de Tv</p>
+
+          <h2 class="h2 section-title">Mejores Series de Tv En Argentina</h2>
+
+          <ul class="movies-list">
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/CasadosconHijos.jpg" alt="Casados con Hijos poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Casados Con Hijos</h3>
+                  </a>
+
+                  <time datetime="2005">2005</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline">2 Temp</ion-icon>
+
+                    <time datetime="PT47M">1 Hs por Capitulo</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <p>8.6</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/breaking-bad.jpg" alt="Breaking Bad poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Breaking Bad</h3>
+                  </a>
+
+                  <time datetime="2008">2008</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4k</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline">5 Temp</ion-icon>
+
+                    <time datetime="PT59M">1 Hs Por Capitulo</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <p>8.8</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/Game-of-thrones.jpg" alt="Game of Thrones poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Game of Thrones</h3>
+                  </a>
+
+                  <time datetime="2011">2011</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline">8 Temp</ion-icon>
+
+                    <time datetime="PT51M">51 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <p>8.3</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-4.png" alt="Money Heist movie poster">
+                  </figure>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Money Heist</h3>
+                  </a>
+
+                  <time datetime="2017">2017</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT70M">70 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <p>8.3</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand-wrapper">
+
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/LogoBA.svg" alt="BA logo">
+          </a>
+
+          <ul class="footer-list">
+
+            <li>
+              <a href="./index.html" class="footer-link">Inicio</a>
+            </li>
+
+            <li>
+              <a href="/index.html#peliculas-calificadas" class="footer-link">Peliculas</a>
+            </li>
+
+            <li>
+              <a href="/index.html#tv-series"  class="footer-link">TV</a>
+            </li>
+
+            <li>
+              <a href="/index.html#service" class="footer-link">Precios</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="quicklink-wrapper">
+
+          <ul class="quicklink-list">
+
+            <li>
+              <a href="#" class="quicklink-link">Faq</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Centro de Ayuda</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Terminos y condiciones</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Privacidad</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="#">Codo a codo</a>. Proyecto en proceso
+        </p>
+
+        <img src="./assets/images/footer-bottom-img.png" alt="Logode la compañia" class="footer-bottom-img">
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #Subir A LA SECCION INICIAL
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - Customisacion del js
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
